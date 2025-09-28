@@ -1,16 +1,17 @@
 package negocio;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertNull;
 
 public class GerenciadoraClientesTest_Ex3 {
 
-	private GerenciadoraClientes gerClientes;
+    private GerenciadoraClientes gerClientes;
 
 	@Test
 	public void testPesquisaCliente() {
@@ -32,7 +33,7 @@ public class GerenciadoraClientesTest_Ex3 {
 		Cliente cliente = gerClientes.pesquisaCliente(1);
 		
 		/* ========== Verificações ========== */
-		assertThat(cliente.getId(), is(1));
+		assertThat(cliente.getId(), equalTo(1));
 		
 	}
 	
@@ -56,8 +57,8 @@ public class GerenciadoraClientesTest_Ex3 {
 		boolean clienteRemovido = gerClientes.removeCliente(2);
 		
 		/* ========== Verificações ========== */
-		assertThat(clienteRemovido, is(true));
-		assertThat(gerClientes.getClientesDoBanco().size(), is(1));
+		assertThat(clienteRemovido, equalTo(true));
+		assertThat(gerClientes.getClientesDoBanco().size(), equalTo(1));
 		assertNull(gerClientes.pesquisaCliente(2));
 		
 	}

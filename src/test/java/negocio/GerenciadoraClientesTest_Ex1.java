@@ -1,12 +1,14 @@
 package negocio;
 
-import static org.junit.Assert.assertThat;
+
+import org.junit.Test;
+
 import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
 
 public class GerenciadoraClientesTest_Ex1 {
 
