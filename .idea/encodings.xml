@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="ISO-8859-1">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/negocio/Cliente.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/negocio/ContaCorrente.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/negocio/GerenciadoraClientes.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/negocio/GerenciadoraContas.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/java/negocio/IdadeNaoPermitidaException.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
