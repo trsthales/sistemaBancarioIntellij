@@ -15,6 +15,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 /**
  * Classe criada para validar as principais funcionalidades da classe
@@ -92,6 +93,7 @@ public class GerenciaClientesTest {
 		Cliente cliente = new Cliente(3, "Rodolfo Rocha", 17, "rodolfo@gmail.com", 3, true);
 		try {
 			boolean idadeValida = gerenciadoraClientes.validaIdade(cliente.getIdade());
+			fail();
 		} catch (IdadeNaoPermitidaException e) {
 			assertThat(e.getMessage(), is(IdadeNaoPermitidaException.MSG_IDADE_INVALIDA));
 		}
